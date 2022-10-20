@@ -1,9 +1,7 @@
 package com.backbase.work.api;
 
-import com.backbase.work.ui.ScenarioContext;
+import com.backbase.work.common.ScenarioContext;
 import com.google.gson.Gson;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;

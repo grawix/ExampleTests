@@ -9,7 +9,7 @@ public class SearchJobPage extends BasePage {
     private final By krakowLocationLocator = By.cssSelector(".job__filter.active .filter:nth-child(1)");
     private final By functionDropdownLocator = By.cssSelector(".total__filter--subcategory");
     private final By qaLocationLocator = By.cssSelector(".job__filter.active [value=QA]+span");
-    private final By currentFilterLocation = By.cssSelector(".currentfilter");
+    private final By currentFilterLocation = By.xpath(".//span[@class='currentfilter']");
 
     public SearchJobPage(WebDriver webDriver) {
         super(webDriver);
@@ -39,4 +39,3 @@ public class SearchJobPage extends BasePage {
         return getElement(currentFilterLocation).getText();
     }
 }
-

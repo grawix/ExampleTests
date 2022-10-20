@@ -1,5 +1,6 @@
 package com.backbase.work.ui;
 
+import com.backbase.work.common.ScenarioContext;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;

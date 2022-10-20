@@ -1,5 +1,6 @@
 package com.backbase.work.ui;
 
+import com.backbase.work.common.ScenarioContext;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

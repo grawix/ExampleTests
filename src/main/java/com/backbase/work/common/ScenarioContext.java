@@ -1,4 +1,4 @@
-package com.backbase.work.ui;
+package com.backbase.work.common;
 
 import java.util.HashMap;
 import java.util.Map;
