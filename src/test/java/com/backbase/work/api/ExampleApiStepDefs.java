@@ -23,14 +23,14 @@ public class ExampleApiStepDefs {
     Response response = given().queryParam(parameter, value)
             .when().get("https://www.boredapi.com/api/activity");
 
-    this.scenarioContext.set("RESPONSE", response);
+    this.scenarioContext.set(Keys.RESPONSE, response);
   }
 
   @Then("retrieved activity has participants equals {string}")
   public void retrievedActivityHasParticipantsEquals(String value) {
-    Response response = (Response)scenarioContext.get("RESPONSE");
+    Response response = (Response)scenarioContext.get(Keys.RESPONSE);
     Gson gson = new Gson();
     Activity activity = new Activity();
-    Assert.assertEquals(activity.getParticipants(), Integer.parseInt(value));
+    Assert.assertEquals(Integer.parseInt(value), activity.getParticipants());
   }
 }
