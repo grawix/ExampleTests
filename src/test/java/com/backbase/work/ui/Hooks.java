@@ -30,5 +30,6 @@ public class Hooks {
   public void driverTearDown() {
     WebDriver webDriver = (WebDriver) scenarioContext.get(Keys.DRIVER);
     webDriver.quit();
+    webDriver.close();
   }
 }
