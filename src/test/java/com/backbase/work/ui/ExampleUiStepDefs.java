@@ -1,5 +1,6 @@
 package com.backbase.work.ui;
 
+import com.backbase.work.common.ScenarioContext;
 import com.backbase.work.ui.pages.SearchJobPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -34,6 +35,6 @@ public class ExampleUiStepDefs {
     public void inFilterSectionAppearsName(String filterValue) {
         SearchJobPage searchJobPage = new SearchJobPage(driver);
         String displayedFilter = searchJobPage.getFilterValue();
-        Assert.assertEquals(filterValue,displayedFilter);
+        Assert.assertEquals(filterValue, displayedFilter);
     }
 }
